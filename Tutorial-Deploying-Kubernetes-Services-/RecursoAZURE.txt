@@ -14,7 +14,7 @@ PS C:\Users\Max> az login
     "state": "Enabled",
     "tenantId": "693cbea0-4ef9-4254-8977-76e05cb5f556",
     "user": {
-      "name": "milmax.duque@uao.edu.co",
+      "name": "",
       "type": "user"
     }
   }
@@ -204,14 +204,14 @@ git clone https://github.com/Azure-Samples/azure-voting-app-redis.git
 cd azure-voting-app-redis
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-PS C:\Users\Max\vm\cloud_enviroments\azure\azure-voting-app-redis> kubectl apply -f azure-vote-all-in-one-redis.yaml
+PS C:\Users\Max\vm\azure-voting-app-redis> kubectl apply -f azure-vote-all-in-one-redis.yaml
 Warning: spec.template.spec.nodeSelector[beta.kubernetes.io/os]: deprecated since v1.14; use "kubernetes.io/os" instead
 deployment.apps/azure-vote-back created
 service/azure-vote-back created
 deployment.apps/azure-vote-front created
 service/azure-vote-front created
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-PS C:\Users\Max\vm\cloud_enviroments\azure\azure-voting-app-redis> kubectl get services
+PS C:\Users\Max\vm\azure-voting-app-redis> kubectl get services
 NAME               TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
 azure-vote-back    ClusterIP      10.0.225.130   <none>          6379/TCP       5h44m
 azure-vote-front   LoadBalancer   10.0.238.15    20.85.142.164   80:32193/TCP   5h44m
