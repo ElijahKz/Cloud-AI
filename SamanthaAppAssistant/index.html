@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="js/video2.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- This line removes any default padding and style. 
+       You might only need one of these values set. -->
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="o-container-z">
+    <div class="o-data">
+      <div id="o-palabras-dichas" class="o-palabras">
+        <p class="o-title o-title-say">Acabas de decir</p>
+      </div>
+      <div class="o-commands">
+        <p class="o-title">Hola! Soy samanta. Habla conmigo: Samanta + commando</p>
+        <p>Reproducir</p>
+        <p>Detener</p>
+        <p>Subir volumen</p>
+        <p>Bajar volumen</p>
+        <p>Filtrar</p>
+      </div>
+    </div>
+    <div class="o-botones-control">
+      <a onclick="startTalk()">Hablar</a>
+      <a onclick="pauseTalk()">Silenciar</a>
+    </div>
+  </div>
+ 
+</body>
+
+</html>
